@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Tipografias/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Poetsen;
+    src: url(../Tipografias/PoetsenOne-Regular.ttf);
+}
+
+body {
+    background: #ffe259;
+    background: linear-gradient(to right, #ffa751, #ffe259);
+}
+
+.bg {
+    background-image: url(img/stand.png);
+    background-position: center center;
+}
+
+.inppass {
+    border: .2rem solid #4E3084;
+    border-radius: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.imgandinput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card.text-center {
+    border-radius: 20px;
+}
+
+.card-footer.text-muted {
+    background-color: #E51B81;
+    border-radius: 0 0 20px 20px;
+}
+
+.instrucciones {
+    color: white;
+}
+
+.titulo {
+    color: #4E3084;
+    font-family: Poetsen;
+    font-size: 2rem;
+}
+
+.texto {
+    color: #4E3084;
+    font-family: Montserrat;
+}

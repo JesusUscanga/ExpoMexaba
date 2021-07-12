@@ -1,57 +1,83 @@
-@font-face {
-    font-family: Montserrat;
-    src: url(../Tipografias/Montserrat-Light.ttf);
-}
-
-@font-face {
-    font-family: Poetsen;
-    src: url(../Tipografias/PoetsenOne-Regular.ttf);
-}
-
-body {
-    background: #ffe259;
-    background: linear-gradient(to right, #ffa751, #ffe259);
-}
-
-.bg {
-    background-image: url(img/stand.png);
-    background-position: center center;
-}
-
-.inppass {
-    border: .2rem solid #4E3084;
-    border-radius: 15px;
-    margin: 0px;
-    padding: 0px;
-}
-
-.imgandinput {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-.card.text-center {
-    border-radius: 20px;
-}
-
-.card-footer.text-muted {
-    background-color: #E51B81;
-    border-radius: 0 0 20px 20px;
-}
-
-.instrucciones {
-    color: white;
-}
-
-.titulo {
-    color: #4E3084;
-    font-family: Poetsen;
-    font-size: 2rem;
-}
-
-.texto {
-    color: #4E3084;
-    font-family: Montserrat;
-}
+    @font-face {
+        font-family: Montserrat;
+        src: url(../Tipografias/Montserrat-Light.ttf);
+    }
+    
+    @font-face {
+        font-family: Poetsen;
+        src: url(../Tipografias/PoetsenOne-Regular.ttf);
+    }
+    
+    body {
+        /*background: #ffe259;
+        background: linear-gradient(to right, #ffa751, #ffe259);*/
+        background: rgb(245, 170, 18);
+        background: linear-gradient(150deg, rgba(245, 170, 18, 1) 13%, rgba(229, 27, 129, 1) 50%, rgba(2, 175, 216, 1) 83%);
+    }
+    
+    .bg {
+        background-image: url(img/stand.png);
+        background-position: center center;
+    }
+    
+    .inppass {
+        border: .2rem solid #4E3084;
+        border-radius: 15px;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .inppass:focus {
+        outline: none;
+    }
+    
+    .imgandinput {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    .card.text-center {
+        border-radius: 20px;
+    }
+    
+    .card-footer.text-muted {
+        background-color: #E51B81;
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .instrucciones {
+        color: white;
+    }
+    
+    .titulo {
+        color: #4E3084;
+        font-family: Poetsen;
+        font-size: 2rem;
+    }
+    
+    .texto {
+        color: #4E3084;
+        font-family: Montserrat;
+    }
+    
+    .imgfoot {
+        margin-top: -3rem;
+        float: right;
+        margin-right: 1rem;
+        width: 5%;
+        height: 5%;
+    }
+    
+    @media screen and (max-width: 992px) {
+        .d-flex.flex-row-reverse {
+            margin-top: -3rem;
+        }
+        .d-flex.flex-row-reverse img {
+            margin-right: 1rem;
+            width: 10%;
+            height: 10%;
+        }
+    }

@@ -71,6 +71,16 @@
         height: 5%;
     }
     
+    .hidden {
+        display: none;
+    }
+    
+    .text-center.hidden {
+        font-family: Montserrat;
+        font-size: 2rem;
+        color: #F5AA12;
+    }
+    
     @media screen and (max-width: 992px) {
         .d-flex.flex-row-reverse {
             margin-top: -3rem;
@@ -79,5 +89,10 @@
             margin-right: 1rem;
             width: 10%;
             height: 10%;
+        }
+        .text-center.hidden {
+            font-family: Montserrat;
+            font-size: .8rem;
+            color: #F5AA12;
         }
     }

@@ -22,7 +22,7 @@
 
                 <div class="col text-center ">
                     <img src="img/LOGO.png " class="img-fluid ">
-                    <br>
+                    <br><br><br>
                     <div class="card text-center">
                         <div class="card-body">
                             <h5 class="card-title titulo">Bienvenido</h5>
@@ -41,12 +41,39 @@
             <div class="col-lg-4 col-2"></div>
         </div>
     </div>
-    <img src="img/logotezca.png" class="imgfoot">
+    <img src="img/logorm.png" class="imgfoot2">
+    <img src="img/logotezca.png" class="imgfoot">  
+    <form action="index.php" method=post name="formularioLogin">
+        <input type="hidden" name="passwordhidden" value="" id="passwordhidden">
+</form>
 
 
 </body>
 <script src="bootstrap/js/popper.min.js "></script>
 <script src="bootstrap/js/bootstrap.min.js "></script>
 <script src="js/login.js"></script>
+<script>
 
+text.addEventListener('keyup', (event) => {
+    var inputText = event.path[0].value;
+    console.log(inputText);
+    textHidden.value=inputText;
+    if (inputText == pass) {
+        document.formularioLogin.submit();
+    }
+    else{
+    }
+});
+
+text.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        if (text.value == pass) {
+            document.formularioLogin.submit();
+        } else {
+            document.getElementById("alert").style.display = "block";
+        }
+    }
+});
+</script>
 </html>

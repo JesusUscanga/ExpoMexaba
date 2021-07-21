@@ -27,7 +27,7 @@
                         <div class="card-body">
                             <h5 class="card-title titulo">Bienvenido</h5>
                             <p class="card-text texto">Introduce el código de acceso</p>
-                            <input type="password" class=" inppass" name="password" id="password">
+                            <input type="password" class=" inppass" name="password" id="password" autofocus>
                             <p id="alert" class="text-center hidden">Contraseña errónea</p>
                         </div>
                         <div class="card-footer text-muted">

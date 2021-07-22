@@ -22,7 +22,7 @@ body {
     overflow: hidden;
 }
 
-img {
+.mapa {
     min-height: 100%;
     min-width: 100%;
     height: auto;
@@ -33,6 +33,7 @@ img {
     left: -100%;
     right: -100%;
     margin: auto;
+    z-index: 1;
 }
 
 .popup {

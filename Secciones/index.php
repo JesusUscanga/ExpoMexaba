@@ -9,6 +9,7 @@ if(isset($_SESSION) && isset($_SESSION['logueado']) == TRUE){
     if ($detect->isMobile() || $detect->isTablet()) {  
         require_once 'bodyMovil.php';
     }else{
+        //require_once 'bodyGalleta.php';
         require_once 'bodyEscritorio.php';
     }
     require_once 'footer.php';

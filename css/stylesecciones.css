@@ -94,3 +94,26 @@ body {
 .botonCerrar:hover {
     background-color: #E51B81 !important;
 }
+
+#landscape {
+    display: none !important;
+    z-index: -100;
+}
+
+@media(orientation: landscape) {
+    #landscape {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        background: #f2f2f2;
+        z-index: 990000;
+        width: 100%;
+        height: 100vh;
+        font-size: 120%;
+        align-items: center;
+        justify-content: center;
+    }
+}
